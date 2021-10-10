@@ -1,0 +1,183 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+     :root {
+        --seafoam: #B9CDDA;
+        --coral: #D7DAE5;
+        --sunset: #A6D8D4;
+        --granite: #6B7d7D;
+    }
+    
+    body {
+        display: grid;
+        place-items: center;
+        color: black;
+        margin: 100px;
+        background: var(--granite);
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    #container {
+        height: auto;
+        width: auto;
+    }
+    
+    #start {
+        height: 60px;
+        width: 200px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px 0;
+        background: var(--seafoam);
+        color: black;
+        border: 1px solid var(--sunset);
+        border-radius: 30px 10px;
+        cursor: pointer;
+        box-shadow: inset 0px 0px 2px black, 0 0 15px black;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    #start:hover {
+        background: var(--coral);
+        color: black;
+        box-shadow: inset 0px 0px 8px var(--sunset), 0 0 15px var(--sunset);
+    }
+    
+    #instructions {
+        padding: 20px;
+        background: var(--seafoam);
+        border: 1px solid var(--sunset);
+        border-radius: 30px 10px;
+        box-shadow: inset 0px 0px 2px black, 0 0 15px black;
+    }
+    
+    li {
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+    
+    #quiz {
+        height: 400px;
+        position: relative;
+        display: none;
+        place-items: center;
+        padding: 20px;
+        margin: 10px;
+        background: var(--seafoam);
+        border: 1px solid var(--sunset);
+        border-radius: 30px 10px;
+        color: black;
+        box-shadow: inset 0px 0px 2px black, 0 0 15px black;
+    }
+    
+    #questions {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    #choices {
+        height: 250px;
+        width: 535px;
+        line-height: 50px;
+        padding: 10px;
+        color: #fff;
+    }
+    
+    #a,
+    #b,
+    #c,
+    #d {
+        height: 70px;
+        background: var(--granite);
+        line-height: 50px;
+        margin: 10px;
+        border-radius: 7px;
+        padding: 20px;
+        color: #fff;
+        border: 1px solid var(--sunset);
+        cursor: pointer;
+    }
+    
+    #a:hover,
+    #b:hover,
+    #c:hover,
+    #d:hover,
+    .btn:hover {
+        color: black;
+        box-shadow: inset 0px 0px 8px var(--sunset), 0 0 15px var(--sunset);
+    }
+    
+    #showAnswer {
+        color: rgb(219, 219, 48)
+    }
+    
+    #timerbox {
+        height: 50px;
+        width: 200px;
+        border: 1px solid var(--sunset);
+        background-color: var(--seafoam);
+        border-radius: 20px 5px;
+        text-align: center;
+        right: 10px;
+        margin: 10px;
+        padding: 10px;
+        font-weight: bolder;
+        box-shadow: inset 0px 0px 2px black, 0 0 15px black;
+        display: none;
+        color: rgb(148, 6, 6);
+    }
+    
+    h4,
+    .timer-text {
+        display: grid;
+        place-items: center;
+        color: #fff;
+        margin: 0 10px;
+    }
+    
+    #resultsBox {
+        height: 500px;
+        width: 450px;
+        padding: 20px;
+        background: #e7f1fa;
+        border-radius: 30px 10px;
+        border: 1px solid #b0c4d8;
+        overflow: hidden;
+        position: relative;
+        display: none;
+    }
+    
+    .submit-button {
+        height: 20px;
+        width: 100px;
+        margin: 8px;
+        padding: 2px;
+        border: 1px solid white;
+        border-radius: 2px;
+        cursor: pointer;
+        color: black;
+        background-color: var(--granite);
+    }
+    
+    .btn {
+        height: 30px;
+        width: 100px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px 0;
+        background: var(--seafoam);
+        color: black;
+        border: 1px solid var(--sunset);
+        border-radius: 30px 10px;
+        cursor: pointer;
+        box-shadow: inset 0px 0px 2px black, 0 0 15px black;
+        display: none;
+    }
